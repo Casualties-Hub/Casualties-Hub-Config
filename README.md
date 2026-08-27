@@ -23,13 +23,13 @@ npm run check
 
 ## Published URLs
 
-Base: [`https://casualties-hub.github.io/casualties-hub-config`](https://casualties-hub.github.io/casualties-hub-config/)
+Base: [`https://casualties-hub.github.io/casualties-hub-config`](https://casualties-hub.github.io/Casualties-Hub-Config/)
 
 | Path | Serves |
 | --- | --- |
-| [`/v1/hub.json`](https://casualties-hub.github.io/casualties-hub-config/v1/hub.json) | channel `stable`, public releases |
-| [`/v1/prerelease/hub.json`](https://casualties-hub.github.io/casualties-hub-config/v1/prerelease/hub.json) | channel `prerelease`, pre-release testers |
-| [`/v1/hub.schema.json`](https://casualties-hub.github.io/casualties-hub-config/v1/hub.schema.json) | the `v1` schema |
+| [`/v1/hub.json`](https://casualties-hub.github.io/Casualties-Hub-Config/v1/hub.json) | channel `stable`, public releases |
+| [`/v1/prerelease/hub.json`](https://casualties-hub.github.io/Casualties-Hub-Config/v1/prerelease/hub.json) | channel `prerelease`, pre-release testers |
+| [`/v1/hub.schema.json`](https://casualties-hub.github.io/Casualties-Hub-Config/v1/hub.schema.json) | the `v1` schema |
 
 ## Layout
 
