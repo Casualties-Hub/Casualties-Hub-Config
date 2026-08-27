@@ -1,0 +1,17 @@
+{
+  "$schema": "../hub.schema.json",
+  "currentAnnouncement": {
+    "id": "v0.0.8-pre.7",
+    "publishedAtUtc": "2026-08-08T00:00:00Z",
+    "message": "PLACEHOLDER: current prerelease announcement."
+  },
+  "previousAnnouncements": [
+    { "id": "v0.0.8-pre.6.1", "publishedAtUtc": "2026-08-05T00:00:00Z", "message": "PLACEHOLDER: previous prerelease announcement #1." },
+    { "id": "v0.0.8-pre.6",   "publishedAtUtc": "2026-08-03T00:00:00Z", "message": "PLACEHOLDER: previous prerelease announcement #2." },
+    { "id": "v0.0.8-pre.5",   "publishedAtUtc": "2026-08-01T00:00:00Z", "message": "PLACEHOLDER: previous prerelease announcement #3." }
+  ],
+  "links": {
+    "discordUrl": "https://discord.gg/th62vFHWTR",
+    "reportUrl": "https://discord.gg/xFHbg4Djrm"
+  }
+}

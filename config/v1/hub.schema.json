@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://casualties-hub.github.io/casualties-hub-config/v1/hub.schema.json",
+  "title": "Casualties Hub dynamic configuration v1",
+  "type": "object",
+  "required": ["links"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "currentAnnouncement": { "$ref": "#/$defs/announcement" },
+    "previousAnnouncements": {
+      "type": "array",
+      "description": "Newest first.",
+      "items": { "$ref": "#/$defs/announcement" }
+    },
+    "links": {
+      "type": "object",
+      "required": ["discordUrl", "reportUrl"],
+      "additionalProperties": false,
+      "properties": {
+        "discordUrl": { "$ref": "#/$defs/httpsUrl" },
+        "reportUrl": { "$ref": "#/$defs/httpsUrl" }
+      }
+    }
+  },
+  "$defs": {
+    "announcement": {
+      "type": "object",
+      "required": ["id", "publishedAtUtc", "message"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique within the document.",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+        },
+        "publishedAtUtc": { "$ref": "#/$defs/utcTimestamp" },
+        "message": { "type": "string", "minLength": 1, "maxLength": 600 }
+      }
+    },
+    "utcTimestamp": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$"
+    },
+    "httpsUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://",
+      "maxLength": 300
+    }
+  }
+}
